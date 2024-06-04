@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/singup.css">
+    <title>login</title>
+</head>
+<body>
+    <body cz-shortcut-listen="true">
+        <span class="d-none" id="username"></span>
+    
+        <div class="container my-5 text-center">
+            <div class="group m-auto w-75 p-5">
+                <h1>Smart Login System</h1>
+    
+                <input oninput="validInputs(this)" id="signupName" class="form-control my-3" placeholder="Enter your name" type="text">
+                <div class="alert alert-danger d-none py-1 mt-2">
+                    <small>Please, the name must not be less than 4 letters and not more than 8 letters .....</small>
+                  </div>
+                <input oninput="validInputs(this)" id="signupEmail" class="form-control my-3" placeholder="Enter your email" type="email">
+                <div class="alert alert-danger d-none py-1 mt-2">
+                    <small>Please write your email correctly .....</small>
+                  </div>
+                <input oninput="validInputs(this)" id="signupPassword" class="form-control my-3" placeholder="Enter  password" type="password">
+                <div class="alert alert-danger d-none py-1 mt-2">
+                    <small>Please write the password of at least 10 numbers, preferably a capital letter .....</small>
+                  </div>
+
+                <span id="Success" class="text-success m-3 d-none">Success</span>
+                <span id="exist" class="text-danger m-3 d-none">email already exists</span>
+                <button id="btn" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+                <p class="text-white">You have an account? <a class="text-white" href="./index.html">Signin</a></p>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/singup.js"></script>
+</body>
+</html>
